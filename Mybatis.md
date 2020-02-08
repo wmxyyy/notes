@@ -246,7 +246,7 @@ public interface IUserDao {
 
 - 持久层映射配置中 mapper 标签的 namespace 属性取值必须是持久层接口的全限定类名
 
-- SQL 语句的配置标签<select>,<insert>,<delete>,<update>的 id 属性必须和持久层接口的方法名相同
+- SQL 语句的配置标签select,insert,delete,update的 id 属性必须和持久层接口的方法名相同
 
 - resultTyle属性：指定的结果集类型
 
