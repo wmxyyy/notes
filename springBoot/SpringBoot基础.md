@@ -62,7 +62,7 @@ SpringBoot对上述Spring的缺点进行的改善和优化，**基于约定优�
 
 使用idea工具创建一个maven工程，该工程为普通的java工程即可
 
-![](img\1.png)
+![](img/1.png)
 
 
 
