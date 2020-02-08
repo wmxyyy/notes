@@ -242,23 +242,24 @@ public interface IUserDao {
 
 ##### 4.2 持久层接口的映射配置文件
 
-> 持久层接口和持久层接口的映射配置必须在相同的包下
->
-> 持久层映射配置中 mapper 标签的 namespace 属性取值必须是持久层接口的全限定类名
->
-> SQL 语句的配置标签<select>,<insert>,<delete>,<update>的 id 属性必须和持久层接口的方法名相同
->
-> resultTyle属性：指定的结果集类型
->
-> parameterType属性：指定传入参数类型
->
-> #{ } ：它代表占位符，#{ } 它用的是 ognl 表达式。 相当于原来 jdbc的 ?，都是用于执行语句时替换实际的数据。
->
-> ognl 表达式：
-> 它是 apache 提供的一种表达式语言， 全称是：Object Graphic Navigation Language 对象图导航语言。它是按照一定的语法格式来获取数据的。语法格式就是使用 #{对象.对象}的方式 
-> 
-> #{user.username}它会先去找 user 对象，然后在 user 对象中找到 username 属性，并调用
-> getUsername()方法把值取出来。但是我们在 parameterType 属性上指定了实体类名称，所以可以省略 user，而直接写 username 
+- 持久层接口和持久层接口的映射配置必须在相同的包下
+
+- 持久层映射配置中 mapper 标签的 namespace 属性取值必须是持久层接口的全限定类名
+
+- SQL 语句的配置标签<select>,<insert>,<delete>,<update>的 id 属性必须和持久层接口的方法名相同
+
+- resultTyle属性：指定的结果集类型
+
+- parameterType属性：指定传入参数类型
+
+- #{ } ：它代表占位符，#{ } 它用的是 ognl 表达式。 相当于原来 jdbc的 ?，都是用于执行语句时替换实际的数据。
+
+- > ognl 表达式：
+  > 它是 apache 提供的一种表达式语言， 全称是：Object Graphic Navigation Language 对象图导航语言。它是按照一定的语法格式来获取数据的。语法格式就是使用 #{对象.对象}的方式 
+  >
+  > #{user.username}它会先去找 user 对象，然后在 user 对象中找到 username 属性，并调用
+  > getUsername()方法把值取出来。但是我们在 parameterType 属性上指定了实体类名称，所以可以省略 user，而直接写 username 
+
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
