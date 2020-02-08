@@ -66,15 +66,15 @@ SpringBoot对上述Spring的缺点进行的改善和优化，**基于约定优�
 
 
 
-![](img\2.png)
+![](img/2.png)
 
 
 
-![](img\3.png)
+![](img/3.png)
 
 
 
-![](img\4.png)
+![](img/4.png)
 
 
 
@@ -173,7 +173,7 @@ tomcat已经起步，端口监听8080，web应用的虚拟工程名称为空
 
 打开浏览器访问url地址为：http://localhost:8080/quick
 
-![](img\5.png)
+![](img/5.png)
 
 ## 2.2 快速入门解析
 
@@ -198,23 +198,23 @@ tomcat已经起步，端口监听8080，web应用的虚拟工程名称为空
 
 出现这种情况，并不是热部署配置问题，其根本原因是因为Intellij IEDA默认情况下不会自动编译，需要对IDEA进行自动编译的设置，如下：
 
-![](img\19.png)
+![](img/19.png)
 
 然后 Shift+Ctrl+Alt+/，选择Registry
 
-![](img\20.png)
+![](img/20.png)
 
 ### 2.2.4 使用idea快速创建SpringBoot项目
 
-![](img\6.png)
+![](img/6.png)
 
-![](img\7.png)
+![](img/7.png)
 
-![](img\8.png)
+![](img/8.png)
 
-![](img\9.png)
+![](img/9.png)
 
-![](img\10.png)
+![](img/10.png)
 
 
 
@@ -507,7 +507,7 @@ protected List<String> getCandidateConfigurations(AnnotationMetadata metadata,
 
 其中，SpringFactoriesLoader.loadFactoryNames 方法的作用就是从META-INF/spring.factories文件中读取指定类对应的类名称列表 
 
-![](img\11.png)
+![](img/11.png)
 
 spring.factories 文件中有关自动配置的配置信息如下：
 
@@ -573,7 +573,7 @@ public class ServerProperties {
 
 prefix = "server" 表示SpringBoot配置文件中的前缀，SpringBoot会将配置文件中以server开始的属性映射到该类的字段中。映射关系如下：
 
-![](img\12.png)
+![](img/12.png)
 
 # 四、SpringBoot的配置文件                                                                              
 
