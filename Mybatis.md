@@ -254,11 +254,11 @@ public interface IUserDao {
 >
 > #{ } ：它代表占位符，#{ } 它用的是 ognl 表达式。 相当于原来 jdbc的 ?，都是用于执行语句时替换实际的数据。
 >
-> > ognl 表达式：
-> > 它是 apache 提供的一种表达式语言， 全称是：Object Graphic Navigation Language 对象图导航语言。它是按照一定的语法格式来获取数据的。语法格式就是使用 #{对象.对象}的方式 
-> >
-> > #{user.username}它会先去找 user 对象，然后在 user 对象中找到 username 属性，并调用
-> > getUsername()方法把值取出来。但是我们在 parameterType 属性上指定了实体类名称，所以可以省略 user，而直接写 username 
+> ognl 表达式：
+> 它是 apache 提供的一种表达式语言， 全称是：Object Graphic Navigation Language 对象图导航语言。它是按照一定的语法格式来获取数据的。语法格式就是使用 #{对象.对象}的方式 
+> 
+> #{user.username}它会先去找 user 对象，然后在 user 对象中找到 username 属性，并调用
+> getUsername()方法把值取出来。但是我们在 parameterType 属性上指定了实体类名称，所以可以省略 user，而直接写 username 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
