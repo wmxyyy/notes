@@ -804,7 +804,7 @@ public class QuickStartController {
 
 浏览器访问地址：http://localhost:8080/quick 结果如下：
 
-![](img\13.png)
+![](img/13.png)
 
 
 
@@ -997,7 +997,7 @@ public class MapperController {
 
 ### 5.1.10 测试
 
-![](img\14.png)
+![](img/14.png)
 
 ## 5.2 SpringBoot整合Junit
 
@@ -1058,7 +1058,7 @@ public final class SpringRunner extends SpringJUnit4ClassRunner
 
 ### 5.2.3 控制台打印信息
 
-![](img\15.png)
+![](img/15.png)
 
 
 
